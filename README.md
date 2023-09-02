@@ -48,6 +48,7 @@ Without valgrind we got Segmentation fault:
 $ timeout 2 angie -c /tmp/build/nginx.conf
 Segmentation fault (core dumped)
 ```
+Binary module for Angie is placed here - https://github.com/dmitry-j-mikhin/angie-atexit-bug/releases/download/v1.0/ngx_http_hello_world_module.so
 
 P.S on vanilla Nginx 1.25.2 there is no such bug:
 ```Shell
