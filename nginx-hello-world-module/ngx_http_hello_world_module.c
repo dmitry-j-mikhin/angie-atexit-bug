@@ -77,7 +77,7 @@ static void ngx_http_hello_world_atexit(void)
      printf("That was all, folks %p\n", p);
 }
 
-ngx_int_t ngx_http_hello_world_init(ngx_cycle_t *cycle)
+static ngx_int_t ngx_http_hello_world_init(ngx_cycle_t *cycle)
 {
     int i = atexit(ngx_http_hello_world_atexit);
     if (i != 0) {
